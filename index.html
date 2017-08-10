@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>Sample App</title>
+    <link rel="shortcut icon" href="">
+    <script>
+      !function(t,e,n,s) {
+        t.DPEventsFunction=s,t[s]=t[s] || function() {
+          (t[s].q=t[s].q||[]).push(arguments)
+        };
+        var c=e.createElement("script"),o=e.getElementsByTagName("script")[0]
+        c.async=1,c.src=n,o.parentNode.insertBefore(c,o)
+      }(window, document, "http://localhost:4000/v1/loop.js", "_dp");
+
+      _dp('configure', { host: "http://localhost:4000", hostApi: "http://api.lvh.me:4000", appId: "3d1c65d0" });
+    </script>
+</head>
+<body>
+    <div id='root'></div>
+    <script src="static/bundle.js"></script>
+</body>
+</html>
